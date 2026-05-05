@@ -1,0 +1,142 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: linear-gradient(#cfe8f3, #dff1f7);
+}
+
+/* FONDO CUADRICULADO */
+body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: -1;
+}
+
+.contenedor {
+  width: 850px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* FLEX */  
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  background: #1da1f2;
+  color: white;
+  padding: 35px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+h1 {
+  color: #00a0dc;
+  text-shadow: 2px 2px 4px gray;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+
+.autor{
+  margin-left: 650px;
+   background: #eee;
+}
+
+
+
+.texto {
+  text-align: justify;
+}
+
+/* FILAS FLEX */
+.fila {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.borde {
+  border: 2px solid black;
+  padding: 10px;
+}
+
+/* TARJETAS */
+.card {
+  flex: 1;
+  padding: 10px;
+  background: #ffffff;
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 3px 3px 6px rgb(95, 89, 89);
+  
+}
+
+
+.card2 { flex: 1; padding: 10px; 
+border: 2px solid black;
+background: #eee;
+}
+
+/* TITULOS CON ICONO */
+.titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: rgb(241, 241, 241);
+  padding: 5px;
+  font-weight: bold;
+}
+
+.titulo img {
+  width: 18px;
+}
+
+/* COLORES */
+.rojo { background: #e44d26; }
+.azul { background: #264de4; }
+.verde { background: #4CAF50; }
+
+/* RESALTADO */
+span {
+  background: yellow;
+}
+
+/* LOGOS GRANDES */
+.logo-card{
+  display: block;
+  margin: 10px auto;
+  width: 70px;
+}
+
+/* IMAGEN FINAL */
+.final {
+  text-align: center;
+  margin: 20px;
+}
+
+.final img {
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px gray;
+}
+
+/* RESUMEN */
+.resumen {
+  background: #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px gray;
+  text-align: center;
+}
+
